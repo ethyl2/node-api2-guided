@@ -1,8 +1,6 @@
-const server = require('./api/server.js');
-/*
 const express = require('express');
 
-const Hubs = require('./hubs/hubs-model.js');
+const Hubs = require('../hubs/hubs-model.js');
 
 const server = express();
 
@@ -100,7 +98,5 @@ server.put('/api/hubs/:id', (req, res) => {
 
 // add an endpoint that returns all the messages for a hub
 // add an endpoint for adding new message to a hub
-*/
-server.listen(4000, () => {
-  console.log('\n*** Server Running on http://localhost:4000 ***\n');
-});
+
+module.exports = server;
